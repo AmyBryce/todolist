@@ -7,30 +7,75 @@
 *, body {
     padding: 0px;
     margin: 0px;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
-	padding: 50px;
+	padding: 20px;
 	text-align: center;
 }
 
 #maindiv {
-	width: 500px;
+	width: 600px;
 	display: inline-block;
 	position: relative;
 }
 
 #title {
-	background-color: #00FF7F;
+	padding: 15px;
+	background-color: #00FF7F; /* Green boosts productivity! */
+}
+
+.borderfont {
+	color: #FFFFFF;
+	text-shadow: 1px 1px #C0C0C0, -1px -1px #708090;
+}
+
+#input {
+	padding: 10px;
+	/* Align input box and button to the left of the div */
+}
+
+#new-todo {
+	width:300px; 
+	height:26px;
+	font-size: 16px;
+	outline-style: none;
+}
+
+#button {
+	width:50px; 
+	height:30px;
+	font-size: 16px;
 }
 
 #tasklist {
 	height: 400px;
+	padding: 10px;
+	overflow: auto
 }
 
-#footerdiv {
+#bottomdiv {
 	bottom: 0px;
+	padding: 10px;
+	font-size: 20px;
 	background-color: #00FF7F;
+	/* Add a slight margin on top to create white space between font and divs */
+	margin-top: 10px;
 }
+
+#bottomtable {
+	width: 100%;
+}
+
+#footer {
+	margin-top: 5px;
+}
+
+h6 {
+	color: #A9A9A9;
+	font-style: italic;
+}
+
 
 
