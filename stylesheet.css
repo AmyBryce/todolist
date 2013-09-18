@@ -1,0 +1,36 @@
+/*
+* {
+    border: 1px solid black;
+} 
+*/
+
+*, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	padding: 50px;
+	text-align: center;
+}
+
+#maindiv {
+	width: 500px;
+	display: inline-block;
+	position: relative;
+}
+
+#title {
+	background-color: #00FF7F;
+}
+
+#tasklist {
+	height: 400px;
+}
+
+#footerdiv {
+	bottom: 0px;
+	background-color: #00FF7F;
+}
+
+
