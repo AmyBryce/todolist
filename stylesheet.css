@@ -15,6 +15,10 @@ body {
 	text-align: center;
 }
 
+.clear {
+	clear: both;
+}
+
 #maindiv {
 	width: 600px;
 	display: inline-block;
@@ -47,13 +51,58 @@ body {
 	width:50px; 
 	height:30px;
 	font-size: 16px;
+	color: #696969;
 }
 
 #tasklist {
 	height: 400px;
 	padding: 10px;
+	color: #696969;
 	overflow: auto
 }
+
+#task {
+	position: relative;
+	padding: 5px 0px;
+	border-bottom: 1px solid #00FF7F;
+	text-align: left;
+}
+
+#checkbox {
+	float: left;
+}
+
+#tasktext {
+	width: 500px;
+	margin: 2px 5px;
+	float: left;
+}
+
+#deletebutton {
+	padding-right: 10px;
+	float: right;
+	display: none;
+}
+
+.deletebutton {
+	width: 20px;
+	height: 20px;
+	border: 0px;
+}
+
+#task:hover #deletebutton {
+    display: inherit;
+}
+
+/* 
+label:hover {
+	background:#eee;
+	cursor:pointer;
+}
+
+*/
+
+
 
 #bottomdiv {
 	bottom: 0px;
