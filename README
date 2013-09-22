@@ -1,0 +1,50 @@
+Application: To Do List
+
+Tools used:
+- HTML
+- CSS
+- JavaScript (JQuery, Underscore.js, Backbone.js)
+
+Description: “ ”
+
+Basic features:
+- the input exists for the user to type a task to be added to the list
+- when the user clicks the add button, a new task is created and added to the list
+- each task on the list has a checkbox, the inputted text, and a delete button
+- the user checks the checkbox when the associated task has been completed
+- when the checkbox is checked the associated task text is crossed out and faded
+- when the delete button is clicked the associated task is removed from the list
+
+HTML Elements:
+- input element
+- add button
+- list element
+	- task element
+		- checkbox
+		- task text
+		- delete button
+
+Interactions:
+- the add button needs to interact with the text input element and the list element
+- each checkbox needs to interact with its adjacent task text 
+- each delete button needs to interact with its containing task element and the list element 
+
+Actions:
+- when the user presses any key in the input box:
+	1: check if key pressed is ‘enter’
+	2: if true then act as add button click 
+- when the user clicks the add button:
+	1: if nothing is in the input element, do nothing. Otherwise...
+	2: create a new task element
+	3: extract text that was entered in the input element 
+	4: add text to the new task element
+	5: place the new task element into the list element
+	6: clear text from input element
+- when the user clicks a checkbox:
+	1: find the adjacent task text
+	2: add strikethrough and color formatting to the text
+- when the user hovers over a task element:
+	1: displays delete button for that task element 
+- when the user clicks the delete button:
+	1: find the containing task element 
+	2: remove the task element from the list element
