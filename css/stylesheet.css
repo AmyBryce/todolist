@@ -35,23 +35,24 @@ body {
 	text-shadow: 1px 1px #C0C0C0, -1px -1px #708090;
 }
 
-#input {
+#inputdiv {
 	padding: 10px;
 	/* Align input box and button to the left of the div */
 }
 
-#new-todo {
+#input {
 	width:300px; 
 	height:26px;
 	font-size: 16px;
 	outline-style: none;
 }
 
-#button {
+#addbutton {
 	width:50px; 
 	height:30px;
 	font-size: 16px;
 	color: #696969;
+	cursor: pointer;
 }
 
 #tasklist {
@@ -61,24 +62,29 @@ body {
 	overflow: auto
 }
 
-#task {
+.task {
 	position: relative;
 	padding: 5px 0px;
 	border-bottom: 1px solid #00FF7F;
 	text-align: left;
 }
 
-#checkbox {
+.taskcheckbox {
 	float: left;
 }
 
-#tasktext {
+.tasktext {
 	width: 500px;
 	margin: 2px 5px;
 	float: left;
 }
 
-#deletebutton {
+.tasktextcompleted {
+	text-decoration: line-through; 
+	opacity: 0.5;
+}
+
+.taskdeletebutton {
 	padding-right: 10px;
 	float: right;
 	display: none;
@@ -88,21 +94,12 @@ body {
 	width: 20px;
 	height: 20px;
 	border: 0px;
+	cursor: pointer;
 }
 
-#task:hover #deletebutton {
+.task:hover .taskdeletebutton {
     display: inherit;
 }
-
-/* 
-label:hover {
-	background:#eee;
-	cursor:pointer;
-}
-
-*/
-
-
 
 #bottomdiv {
 	bottom: 0px;

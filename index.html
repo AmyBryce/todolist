@@ -9,47 +9,47 @@
       <h1 class="borderfont">To Do:</h1>
     </div>
     <div> <!-- This is the secondary main div that holds all the divs between the green-filled divs-->
-      <div id="input">
-        <input id="new-todo" placeholder="What needs to be done?" autofocus>
-        <button id="button">Add</button>
+      <div id="inputdiv">
+        <input id="input" placeholder="What needs to be done?" autofocus>
+        <button id="addbutton">Add</button>
       </div>
       <div id="tasklist">
-        <div> <!-- positivly remove this div -->
-          <!-- We’ll start by filling in the #item-template which will be used to display individual todo items -->
-          <!-- index.html -->
-          <!-- <script type="text/template" id="item-template"> -->
-            <div id="task">
-              <div id="checkbox"><input class="checkbox" type="checkbox"></div>
-              <div id="tasktext">Task One</div>
-              <div id="deletebutton"><button class="deletebutton">&#10006;</button></div>
-              <div class="clear"></div>
-            </div>
-            <div id="task">
-              <div id="checkbox"><input class="checkbox" type="checkbox"></div>
-              <div id="tasktext">Task Two: words words words wo rd ss words words worms worms wo rm ss wurd! nonsense</div>
-              <div id="deletebutton"><button class="deletebutton">&#10006;</button></div>
-              <div class="clear"></div>
-            </div>
-          <!-- </script> -->
-        </div>
+        <!-- Tasks added here -->
       </div>
     </div>
     <div id="bottomdiv">
       <table id="bottomtable" class="borderfont">
+        &nbsp;<!--
         <tr>
           <td># Task(s)</td>
           <td>All  Active  Completed</td>
           <td>Clear Completed</td>
         </tr>
+      -->
       </table>
     </div>
   </div>
   <div id="footer">
     <p><h6>Creator: Amy Bryce, 2013</h6></p> 
   </div>
+  <!-- script below -->
+  <script type="text/template" id="jquerytask">
+    <div class="task">
+      <div class="taskcheckbox"><input type="checkbox"></div>
+      <div class="tasktext"></div>
+      <div class="taskdeletebutton"><button class="deletebutton">&#10006;</button></div>
+      <div class="clear"></div>
+    </div>
+  </script>
   <script src="js/jquery-1.10.2.js"></script>
   <script src="js/underscore.js"></script>
   <script src="js/backbone.js"></script>
   <script src="js/todo.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      jquerytodo();
+      // backbonetodo();
+    });
+  </script>
 </body>
 </html>
