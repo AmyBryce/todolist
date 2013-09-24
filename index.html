@@ -32,7 +32,7 @@
   <div id="footer">
     <p><h6>Creator: Amy Bryce, 2013</h6></p> 
   </div>
-  <!-- script below -->
+  <!-- JQuery template script -->
   <script type="text/template" id="jquerytask">
     <div class="task">
       <div class="taskcheckbox"><input type="checkbox"></div>
@@ -41,14 +41,24 @@
       <div class="clear"></div>
     </div>
   </script>
+  <!-- Backbone.js template script -->
+  <script type="text/template" id="backbonetask">
+    <!-- //<div class="task"> -->
+      <div class="taskcheckbox"><input type="checkbox"></div>
+      <div class="tasktext"></div>
+      <div class="taskdeletebutton"><button class="deletebutton">&#10006;</button></div>
+      <div class="clear"></div>
+    <!-- //</div> -->
+  </script>
   <script src="js/jquery-1.10.2.js"></script>
   <script src="js/underscore.js"></script>
   <script src="js/backbone.js"></script>
+  <script src="js/backbone.localStorage.js"></script>
   <script src="js/todo.js"></script>
   <script type="text/javascript">
     $(function() {
-      jquerytodo();
-      // backbonetodo();
+      // jquerytodo();
+      backbonetodo();
     });
   </script>
 </body>
