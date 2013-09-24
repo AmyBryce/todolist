@@ -1,9 +1,3 @@
-/*
-* {
-    border: 1px solid black;
-} 
-*/
-
 *, body {
     padding: 0px;
     margin: 0px;
@@ -37,13 +31,13 @@ body {
 
 #inputdiv {
 	padding: 10px;
-	/* Align input box and button to the left of the div */
 }
 
 #input {
 	width:300px; 
 	height:26px;
 	font-size: 16px;
+	color: #696969;
 	outline-style: none;
 }
 
@@ -94,6 +88,7 @@ body {
 	width: 20px;
 	height: 20px;
 	border: 0px;
+	color: #8B0000;
 	cursor: pointer;
 }
 
@@ -106,7 +101,6 @@ body {
 	padding: 10px;
 	font-size: 20px;
 	background-color: #00FF7F;
-	/* Add a slight margin on top to create white space between font and divs */
 	margin-top: 10px;
 }
 
@@ -122,6 +116,3 @@ h6 {
 	color: #A9A9A9;
 	font-style: italic;
 }
-
-
-
